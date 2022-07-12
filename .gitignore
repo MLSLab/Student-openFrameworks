@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+#XCODE
+xcuserdata/
+# https://stackoverflow.com/a/53039267
 
 .DS_Store
 
