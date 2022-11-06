@@ -122,17 +122,20 @@ void ofApp::mouseMoved(int x, int y){
 
 //--------------------------------------------------------------
 void ofApp::mouseDragged(int x, int y, int button){
-
+    if(g_pts.size()>0)
+    {
+        ofPoint pt;
+        pt.x = x;
+        pt.y = y;
+        
+        g_pts.at(g_pts.size() -1) = pt;
+        
+        std::cout << x << " , " << y << " ---  " << g_pts.size() << std::endl;
+    }
 }
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button){
-    
     ofPoint pt;
     pt.x = x;
     pt.y = y;
@@ -141,6 +144,13 @@ void ofApp::mouseReleased(int x, int y, int button){
     
     std::cout << x << " , " << y << " ---  " << g_pts.size() << std::endl;
 }
+
+//--------------------------------------------------------------
+void ofApp::mouseReleased(int x, int y, int button){
+    
+    
+}
+
 
 //--------------------------------------------------------------
 void ofApp::mouseEntered(int x, int y){
