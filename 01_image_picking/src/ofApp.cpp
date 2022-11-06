@@ -15,21 +15,8 @@ void ofApp::update(){
 
 }
 
-#include <string>
-#include <stdexcept>
 
-
-//https://stackoverflow.com/a/26221725
-template<typename ... Args>
-std::string string_format( const std::string& format, Args ... args )
-{
-    int size_s = std::snprintf( nullptr, 0, format.c_str(), args ... ) + 1; // Extra space for '\0'
-    if( size_s <= 0 ){ throw std::runtime_error( "Error during formatting." ); }
-    auto size = static_cast<size_t>( size_s );
-    std::unique_ptr<char[]> buf( new char[ size ] );
-    std::snprintf( buf.get(), size, format.c_str(), args ... );
-    return std::string( buf.get(), buf.get() + size - 1 ); // We don't want the '\0' inside
-}
+#include "bbutilstring.h"
 
 //-------------------------------------------------------------- //60Hz
 void ofApp::draw(){
@@ -41,14 +28,14 @@ void ofApp::draw(){
     if(g_pts.size()>0)
     {
         ofPoint pt = g_pts[g_pts.size()-1]; //
-        buf = string_format("%d\t%d (%.f, %.f)",g_cnt, g_pts.size(),  pt.x, pt.y);
+        buf = StringFormat("%d\t%d (%.f, %.f)",g_cnt, g_pts.size(),  pt.x, pt.y);
         
         //ofDrawLine(pt.x, pt.y, pt.x, pt.y+5);
         
     }
     else
     {
-        buf = string_format("%d\t%d", g_cnt, g_pts.size());
+        buf = StringFormat("%d\t%d", g_cnt, g_pts.size());
     }
     
     ofDrawBitmapString(buf, 30, 30);
@@ -93,7 +80,7 @@ void ofApp::savePts()
     for(int i=0; i<g_pts.size(); i++)
     {
         ofPoint pt = g_pts[i];
-        std::string buf = string_format("%d\t%.f\t%.f\n", i, pt.x, pt.y);
+        std::string buf = StringFormat("%d\t%.f\t%.f\n", i, pt.x, pt.y);
         std::cout << buf;
 
         of<<buf;
