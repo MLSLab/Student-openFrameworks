@@ -130,7 +130,7 @@ void ofApp::mouseDragged(int x, int y, int button){
         
         g_pts.at(g_pts.size() -1) = pt;
         
-        std::cout << x << " , " << y << " ---  " << g_pts.size() << std::endl;
+        //std::cout << x << " , " << y << " ---  " << g_pts.size() << std::endl;
     }
 }
 
