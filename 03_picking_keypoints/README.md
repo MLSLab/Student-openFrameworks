@@ -74,4 +74,5 @@ Done... writing information into COCO/000000007088.json
 
 
 # TODOs
-* Use right click to handle invisible points
+* Use right click to handle the invisible points
+* json 처리시 하다가만 포인트들 무시
