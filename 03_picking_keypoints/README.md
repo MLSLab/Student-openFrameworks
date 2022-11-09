@@ -8,10 +8,12 @@
 
 ### Usage
 
-<kbd>1<kbd> Bounding box (bbox) mode <br/>
-<kbd>2<kbd> Keypoint mode <br/>
-<kbd>j<kbd> Save into a JSON file <br/>
-<kbd>s<kbd> Save into a txt file (just use point information)<br/>
+<kbd>1</kbd> Bounding box (bbox) mode <br/>
+<kbd>2</kbd> Keypoint mode <br/>
+<kbd>backspace</kbd> Remove the last point <br/>
+
+<kbd>j</kbd> Save into a JSON file <br/>
+<kbd>s</kbd> Save into a txt file (just use point information)<br/>
 
 ### Run Example
 
@@ -65,9 +67,9 @@ Done... writing information into COCO/000000007088.json
             255,
             229,
             ...
-
-<img src='screenshots/screenshot01.png' width=640px /> <br/>
-<img src='screenshots/screenshot02.png' width=640px />
+```
+<img src='screenshots/screenshot01.png' width=800px /> <br/>
+<img src='screenshots/screenshot02.png' width=800px />
 
 
 
