@@ -4,7 +4,7 @@
 * openFrameworks version : 0.11.2 under macOS 12.1 Monterey
 
 ### Dependencies
-* ofxJsonUtils
+* ofxJsonUtils, https://github.com/2bbb/ofxJsonUtils
 
 ### Usage
 
