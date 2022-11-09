@@ -2,12 +2,7 @@
 #include "ofxJsonUtils.h"
 // https://github.com/2bbb/ofxJsonUtils
 // https://openframeworks.cc/ko/setup/xcode/
-/*
-typedef struct __bbox
-{
-    int v[4];
-} bbox;
-*/
+
 typedef std::vector<int> bbox;
 typedef std::vector<int> keypts;
 //--------------------------------------------------------------
@@ -15,8 +10,9 @@ void ofApp::setup(){
     //std::string fn;
     //fn = "dog_and_sun_small.jpg";
     //fn = "2560px-Sungkyunkwan_University_Bicheondang_and_600th_Anniversary_Hall.jpg";
-    g_fn = "COCO/000000007088.jpg";
-    
+	g_fn = "COCO/000000025393.jpg"; // two people
+	g_fn = "COCO/000000007088.jpg";
+
     //DD::Tokenize(fn, fns, ".");
     
     g_img1.load(g_fn);
@@ -180,7 +176,7 @@ void ofApp::mouseDragged(int x, int y, int button){
         
         g_vpts.at(g_vpts.size() -1) = pt;
         
-        std::cout << x << " , " << y << " ---  " << g_vpts.size() << std::endl;
+        //std::cout << x << " , " << y << " ---  " << g_vpts.size() << std::endl;
     }
 }
 

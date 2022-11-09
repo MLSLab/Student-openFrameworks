@@ -27,7 +27,7 @@ std::string StringFormat(const std::string fmt_str, ...)
 	return std::string(formatted.get());
 }
 
-#ifdef WINDOWS
+#ifdef WIN32 //WINDOWS
 #include <time.h>
 #include "mytime.h"
 #else

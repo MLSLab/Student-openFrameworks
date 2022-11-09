@@ -2,6 +2,7 @@
 
 ### Tested
 * openFrameworks version : 0.11.2 under macOS 12.1 Monterey
+* openFrameworks version : 0.11.0 Visual Studio 2017 Community Ver. Windows 11
 
 ### Dependencies
 * ofxJsonUtils, https://github.com/2bbb/ofxJsonUtils
@@ -68,10 +69,9 @@ Done... writing information into COCO/000000007088.json
             229,
             ...
 ```
-<img src='screenshots/screenshot01.png' width=800px /> <br/>
-<img src='screenshots/screenshot02.png' width=800px />
-
-
+<img src='screenshots/screenshot01.png' width=800px /><br/>
+<img src='screenshots/screenshot02.png' width=800px /><br/>
+<img src='screenshots/screenshot03.png' width=800px /><br/>
 
 # TODOs
 * Use right click to handle the invisible points
