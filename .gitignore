@@ -1,5 +1,19 @@
 # Prerequisites
 *.d
+*.bak
+obj/
+
+#Visual Studio
+*.pdb
+*.ilk
+*.exp
+*.filters
+*.user
+.vs/
+*.res
+*.log
+
+
 
 #XCODE
 xcuserdata/
